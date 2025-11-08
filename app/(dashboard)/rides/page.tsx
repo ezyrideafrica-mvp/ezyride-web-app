@@ -1,5 +1,6 @@
 "use client";
 
+import "../globals.css"; // go up to /app
 import { useState, useEffect } from "react";
 import { useSupabase } from "@/app/providers/supabase-provider";
 
