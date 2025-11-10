@@ -2,6 +2,7 @@
 
 import { SupabaseProvider, useSupabase } from "@/app/providers/supabase-provider";
 import Link from "next/link";
+import "../globals.css";
 import { useRouter, usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
