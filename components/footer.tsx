@@ -47,7 +47,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex gap-2 text-muted-foreground hover:text-primary transition-colors">
                 <Phone size={16} className="flex-shrink-0" />
-                <span>+234 (705) 123-4567</span>
+                <span>+234 (701) 547-1676</span>
               </div>
               <div className="flex gap-2 text-muted-foreground hover:text-primary transition-colors">
                 <Mail size={16} className="flex-shrink-0" />
