@@ -43,7 +43,7 @@ export default function Contact() {
         {/* Contact Methods */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {[
-            { icon: Phone, title: "Call Us", info: "+234 (705) 123-4567", color: "from-primary" },
+            { icon: Phone, title: "Call Us", info: "+234 (701) 547-1676", color: "from-primary" },
             { icon: Mail, title: "Email Us", info: "info@ezyride.africa", color: "from-secondary" },
             { icon: MapPin, title: "Visit Us", info: "Lagos, Nigeria", color: "from-primary/80" },
           ].map((contact, i) => {
