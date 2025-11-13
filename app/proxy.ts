@@ -1,11 +1,9 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function middleware(req: NextRequest) {
-  // Toggle this flag ON/OFF to enable or disable maintenance mode
+export function proxy(req: NextRequest) {
   const MAINTENANCE_MODE = true;
 
-  // Allow the maintenance page itself and static assets
   if (
     MAINTENANCE_MODE &&
     !req.nextUrl.pathname.startsWith("/maintenance") &&
@@ -16,6 +14,5 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(new URL("/maintenance", req.url));
   }
 
-  // Otherwise, continue normally
   return NextResponse.next();
 }
