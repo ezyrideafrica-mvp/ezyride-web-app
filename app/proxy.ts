@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function proxy(req: NextRequest) {
-  const isMaintenance = true; // test mode (we'll make env later)
+  const isMaintenance = true; // ✅ Hardcoded ON for now (for testing)
 
   if (
     isMaintenance &&
