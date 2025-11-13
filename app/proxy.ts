@@ -2,10 +2,10 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function proxy(req: NextRequest) {
-  const MAINTENANCE_MODE = true;
+  const isMaintenance = true; // test mode (we'll make env later)
 
   if (
-    MAINTENANCE_MODE &&
+    isMaintenance &&
     !req.nextUrl.pathname.startsWith("/maintenance") &&
     !req.nextUrl.pathname.startsWith("/_next") &&
     !req.nextUrl.pathname.startsWith("/api") &&
